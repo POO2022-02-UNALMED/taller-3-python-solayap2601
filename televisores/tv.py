@@ -3,8 +3,8 @@ class TV:
   _numTV = 40
   
   def __init__(self, marca, estado):
-    self._marca = None
-    self._estado = None
+    self._marca = marca
+    self._estado = estado
     self._canal = 1
     self._volumen = 1
     self._precio = 500
