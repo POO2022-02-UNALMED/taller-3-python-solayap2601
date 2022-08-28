@@ -40,13 +40,6 @@ class TV:
   def setCanal(self,chan):
     self._canal = chan
   
-  def getNumTV(self):
-    return self._numTV
-
-  def setNumTV(self,num):
-    self_numTV = num
-
-
   def turnOn (self):
     self._estado = True
 
@@ -71,3 +64,12 @@ class TV:
   def volumenDown(self):
     if self._volumen<8 and self._volumen>0 and self._estado== True:
       self._volumen -= 1
+
+  @classmethod
+  def getNumTV(cls):
+    return cls._numTV
+
+  @classmethod
+  def setNumTV(cls, num):
+    cls._numTV = num
+
