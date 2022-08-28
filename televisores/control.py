@@ -15,7 +15,7 @@ class Control:
   
   def canalDown(self):
     if self._tv_canal<121 and self._tv._canal>1 and self._tv._estado== True:
-      self._canal -= 1
+      self._tv._canal -= 1
 
   def volumenUp(self):
     if self._tv._volumen<7 and self._tv._volumen>=0 and self._tv._estado== True:
@@ -26,7 +26,8 @@ class Control:
       self._tv._volumen -= 1
   
   def setCanal(self, cha):
-    self._tv._canal = cha
+    if cha<120 and cha>0 and self._tv._estado== True:
+      self._tv._canal = cha
 
   def enlazar(self, tele):
     self._tv = tele
