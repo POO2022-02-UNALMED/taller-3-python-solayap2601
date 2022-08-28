@@ -28,7 +28,7 @@ class TV:
   def setPrecio(self,cost):
     self._precio = cost
 
-  def getvolumen(self):
+  def getVolumen(self):
     return self._volumen
   
   def setVolumen(self,vol):
@@ -42,6 +42,10 @@ class TV:
   
   def getNumTV(self):
     return self._numTV
+
+  def setNumTV(num):
+    numTV = num
+
 
   def turnOn (self):
     self._estado = True
