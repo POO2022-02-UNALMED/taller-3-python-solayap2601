@@ -51,19 +51,19 @@ class TV:
   
   def canalUp(self):
     if self._canal<120 and self._canal>0 and self._estado== True:
-      self._canal += 1
+      self._canal = self._canal + 1
   
   def canalDown(self):
     if self._canal<121 and self._canal>1 and self._estado== True:
-      self._canal -= 1
+      self._canal = self._canal - 1
 
   def volumenUp(self):
     if self._volumen<7 and self._volumen>=0 and self._estado== True:
-      self._volumen += 1
+      self._volumen = self._volumen + 1
 
   def volumenDown(self):
     if self._volumen<8 and self._volumen>0 and self._estado== True:
-      self._volumen -= 1
+      self._volumen = self._volumen -1
 
   @classmethod
   def getNumTV(cls):
